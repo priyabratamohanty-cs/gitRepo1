@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card rouded-0">
+            <div class="card-header">
+                <h3 class="mb-0">Register</h3>
+            </div>
+            <div class="card-body ">
+                <form action="" class="form ">
+
+                    <div class="reg-text">
+                        <mat-form-field appearance="outline">
+                            <mat-label>User Name</mat-label>
+                            <input matInput placeholder="User Name" [(ngModel)]="registerUserData.userName" name="userName">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>User ID</mat-label>
+                            <input matInput placeholder="User ID" [(ngModel)]="registerUserData.userID" name="userID">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input type="password" matInput placeholder="Password" [(ngModel)]="registerUserData.password" name="password">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <mat-select placeholder="Select" [(ngModel)]="registerUserData.role" name="role">
+                                <mat-option value="admin">admin</mat-option>
+                                <mat-option value="user">user</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+
+                    <button class="btn btn-primary float-right" type="submit" (click)="registerUser()">Register</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

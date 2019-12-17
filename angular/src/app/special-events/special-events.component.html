@@ -1,0 +1,14 @@
+<div class="row mt-4">
+    <div class="col-md-4 mb-3" *ngFor="let events of specialEvents">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{events.name}}</h5>
+                <p class="card-text">{{events.desc}}</p>
+                <a href="#" class="btn btn-success">Buy Tickets</a>
+            </div>
+            <div class="card-footer text-muted">
+                {{events.date | date:'shortDate'}}
+            </div>
+        </div>
+    </div>
+</div>
